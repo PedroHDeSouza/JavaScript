@@ -112,11 +112,45 @@
 
     atribuição = Em JavaScript, "auto atribuição" refere-se a um operador que permite que uma variável seja atualizada com um valor baseado na sua própria valor atual. Em vez de escrever algo como n = n + 5, pode usar n += 5 ou mais simplificado ainda, como ++n q seria o pre-incremento e n++ pos-incremento
 
-    relacionais = 
+    relacionais = Os operadores realacionais sao: ">" (Maior), "<" (menor), ">=" (maior ou igual), "<=" (menor ou igual), "==" (igual) e "!=" (diferente). Todos os valores de uma operaçao relacional, da um resultado booleano "true" ou "false", existe o operador de identidade, o "===", que verifica se os dois resultados, sao do mesmo valor e mesmo tipo
 
-    lógicos = 
+    lógicos = Os operadores logicos sao "!" (negação, ou "não") , "&&" (conjunção, ou "e logico") e "||" (disjunções, ou "ou logico")
+    
+    ex:
+    negação
+    !true  -- false
+    !false -- true
 
-    ternário =
+    conjunção
+    true && true   -- true
+    true && false  -- false
+    false && true  -- false
+    false && false -- false
+
+    disjunção
+    true || true   -- true
+    true || false  -- true
+    false || true  -- true
+    false || false -- false
+
+    ternário = os operadores ternairos sao "?" () e ":" ()
+    sao divididos em 3 blocos
+    teste ? true : false
+    o teste é qualquer teste logico feito, true representa oq vai acontecer se o teste logico for verdadeiro, e o false representa oq vai acontecerr se o teste logico for falso
+
+    ex:
+
+    media >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+    precedencia =
+    () ** / ... operadores aritmeticos
+    > < >=  ... operadores relacionais
+    !           operadores logicos
+    &&
+    ||
+    test?true:false ...  operador ternario
+    
     
 </body>    
 </html>
