@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALFANDEGA</title>
+</head>
+<body>
+    <h1>QUAL SEU PAIS DE ORIGEM</h1>
+    <input type="text" id="txtpais">
+    <input type="submit" value="Enviar" onclick="pesquisa()">
+    <div id="onde">
+
+    </div>
+    
+
+    <script>
+        function pesquisa(){
+            var pais = window.document.getElementById('txtpais')
+            var onde = window.document.getElementById('onde')
+
+            if (pais == 'Brasil'){
+                onde.innerHTML += `<p>Voce é Brasileiro, viva bem</p>`
+            }else{
+                onde.innerHTML = `<p> Voce é Estrangeiro, cuidado com os impostos </p>`
+            }
+            onde.innerHTML += `<p> Bem vindo!! </p>`
+        }
+    </script>
+</body>
+</html>
