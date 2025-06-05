@@ -18,8 +18,8 @@
         function pesquisa(){
             var pais = window.document.getElementById('txtpais')
             var onde = window.document.getElementById('onde')
-
-            if (pais == 'Brasil'){
+            var txt = pais.value   
+            if (txt == 'Brasil'){
                 onde.innerHTML += `<p>Voce é Brasileiro, viva bem</p>`
             }else{
                 onde.innerHTML = `<p> Voce é Estrangeiro, cuidado com os impostos </p>`
