@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(28, 47, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 95px;
+}
+
+div#container{
+    background-color: rgb(97, 171, 180);
+    width: 500px;
+    height: 650px;
+    border-radius: 20px;
+}
+
+div > input#tarefa{
+    display: block;
+    margin: auto;
+    width: 340px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+div > button{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: solid 2px 2px 5px black;
+}
+
+ul#lista{
+    background-color: wheat;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 400px;
+    border-radius: 10px;
+    width: 440px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+}
+
+#lista {
+    background-color: #fde7b0; 
+    background-image: 
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 24px,
+        #d0b07d 26px
+    ),
+    linear-gradient(
+        to right,
+        #d17b7b 0px,
+        #d17b7b 2px,
+        transparent 2px
+    );
+    background-position: left top, calc(100% - 100px);
+    background-size: 100% 25px, 100% 40%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
