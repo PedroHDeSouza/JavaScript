@@ -38,6 +38,7 @@ div > input#tarefa{
 div > button{
     display: block;
     margin: auto;
+    margin-top: 10px;
     border-radius: 20px;
     box-shadow: solid 2px 2px 5px black;
 }
@@ -73,4 +74,31 @@ ul#lista{
     padding: 20px;
     height: 400px;
     overflow-y: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+li {
+    height: 26px;              
+    display: flex;
+    align-items: flex-end;      
+    gap: 10px;                  
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;            
+}
+
+input[type="checkbox"] {
+    transform: translateY(2px);  
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
 }
